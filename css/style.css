@@ -53,13 +53,12 @@ header {
 }
 
 #ancho {
-	width:960px;
+	width:70.58%;
 	height:140px;
 	position:relative;
 	top:50%;
 	margin-top:-120px;
-	left:50%;
-	margin-left:-480px;
+	left:15%;
 }
 
 /* LOGO */
@@ -93,7 +92,7 @@ header h1 {
 /* MENU */
 nav {
 	float:right;
-	margin-top:20px;
+	margin-top:36px;
 }
 
 nav ul {
