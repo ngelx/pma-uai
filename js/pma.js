@@ -7,6 +7,7 @@ $(document).ready(function(){
     // addevents to autors
     var autor = document.getElementById(autors[i]);
     autor.addEventListener('dragstart', handleDragStart, false);
+    autor.addEventListener('dragend', handleDragEnd, false);
     
     // addevents to frases
     var frases = document.getElementsByName(autors[i]);
@@ -32,7 +33,13 @@ function handleDragStart(e) {
   this.style.opacity = '0.4';
   e.dataTransfer.effectAllowed = 'move';
 }
- 
+
+function handleDragEnd(e) {
+  // some efects for drag
+  this.style.opacity = '1';
+  //e.dataTransfer.effectAllowed = 'move';
+}
+
 function handleDrop(e) {
   // Stops some browsers from redirecting.
   if (e.stopPropagation) {
