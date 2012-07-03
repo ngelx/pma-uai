@@ -1,3 +1,9 @@
 .frase_enter {
-    background: red;
-} 
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	transition: all .5s;
+	background: black;
+	color: white;
+}

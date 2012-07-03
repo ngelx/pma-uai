@@ -18,8 +18,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background: rgb(155,210,64); /* Old browsers */
-background: -webkit-radial-gradient(center, ellipse cover, rgba(155,210,64,1) 0%, rgba(100,149,37,1) 100%);
-
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(155,210,64,1) 0%, rgba(100,149,37,1) 100%);
 	background: -moz-radial-gradient(center, ellipse cover, rgba(155,210,64,1) 0%, rgba(100,149,37,1) 100%);
 	background: -o-radial-gradient(center, ellipse cover, rgba(155,210,64,1) 0%, rgba(100,149,37,1) 100%);
 	background: -ms-radial-gradient(center, ellipse cover, rgba(155,210,64,1) 0%, rgba(100,149,37,1) 100%);
@@ -147,13 +146,14 @@ footer {
 }
 
 article p {
-
+	color: white;
 	font-family: sans-serif;
 	font-size: 1em;
 	cursor: crosshair;
 	padding: 7px;
 	line-height: 1.8em;
 	margin-left: 10%;
+
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
@@ -163,17 +163,6 @@ article p {
 
 article p:hover {
 	color: black;
-	background: white;
-}
-
-.activef {
-	background:red;
-	color:black;
-}
-
-.activet {
-	background:#5dff20;
-	color:black;
 }
 
 
@@ -191,6 +180,7 @@ section article {
 
 section article p {
 	border-bottom: 1px solid grey;
+	color:grey;
 }
 
 /*Contac*/
@@ -299,6 +289,15 @@ section article p {
 	margin-top: -50px;
 }
 
+h3 {
+
+}
+
 #score {
 	color:white;
+	font-size:1.5em;
+	font-family: 'Josefin Sans';
+	position:absolute;
+	bottom:25%;
+	right:10%;
 }
