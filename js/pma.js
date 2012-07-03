@@ -59,8 +59,9 @@ function handleDragEnter(e){
     console.log("ya esta ok")
     return
   }
-
+  $(this).addClass("frase_enter");
   console.log("drag_enter");
+
 }
 
 function handleDragLeave(e){
@@ -68,7 +69,7 @@ function handleDragLeave(e){
     console.log("ya esta ok")
     return
   }
-
+  $(this).removeClass("frase_enter")
   console.log("drag_leave");
 }
 
