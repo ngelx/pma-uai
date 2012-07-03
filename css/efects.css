@@ -1,4 +1,4 @@
-.frase_enter {
+.frase_enter  {
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
@@ -6,6 +6,10 @@
 	transition: all .5s;
 	background: black;
 	color: white;
+} 
+
+.frase_enter p {
+    color: white;
 } 
 
 .frase_ok {
