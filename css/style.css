@@ -154,12 +154,16 @@ article p {
 	padding: 7px;
 	line-height: 1.8em;
 	margin-left: 10%;
-
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
 	-ms-transition: all .5s;
 	transition: all .5s;
+}
+
+article p:hover {
+	color: black;
+	background: white;
 }
 
 .activef {
@@ -293,4 +297,8 @@ section article p {
 	width: 500px;
 	float: right;
 	margin-top: -50px;
+}
+
+#score {
+	color:white;
 }
