@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'PicoBlackAlRegular';
+    src: url('../fonts/t/picobla-webfont.eot');
+    src: url('../fonts/t/picobla-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/t/picobla-webfont.woff') format('woff'),
+         url('../fonts/t/picobla-webfont.ttf') format('truetype'),
+         url('../fonts/t/picobla-webfont.svg#PicoBlackAlRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
