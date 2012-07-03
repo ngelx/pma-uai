@@ -12,6 +12,14 @@
     color: white;
 } 
 
+.frase_ok p {
+    color: black;
+} 
+
+.frase_wrong p {
+    color: black;
+} 
+
 .frase_ok {
   background: #5dff21;
   color:black;
