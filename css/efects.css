@@ -6,4 +6,13 @@
 	transition: all .5s;
 	background: black;
 	color: white;
+} 
+
+.frase_ok {
+  background: #5dff21;
+  color:black;
+}
+
+.frase_wrong {
+  background: red;
 }

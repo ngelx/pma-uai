@@ -161,8 +161,9 @@ article p {
 	transition: all .5s;
 }
 
-article p:hover {
+#autores article p:hover {
 	color: black;
+	background:white;
 }
 
 
