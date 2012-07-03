@@ -104,7 +104,7 @@ function handleOk(fraseElement, autorElement){
   var frase = fraseElement.children[1]
   var autor = autorElement.children[0]
   
-  image.src="images/autors/"+ autorElement.id +".jpg"
+  image.src="images/autors/"+ autorElement.id +".png"
   $(image).removeClass("imagen_autor_hide")
   $(image).addClass("imagen_autor_show")
   
