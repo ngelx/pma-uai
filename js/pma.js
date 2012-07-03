@@ -99,10 +99,17 @@ function handleOk(fraseElement, autorElement){
   }
   
   fraseElement.className = "frase_ok"
-  i = fraseElement.children[0].innerHTML
-  autor = autorElement.children[0].innerHTML
-  i = i + '<label class="autor_label"> - ' + autor + '</label>'
-  fraseElement.children[0].innerHTML = i
+  var image = fraseElement.children[0]
+  var frase = fraseElement.children[1]
+  var autor = autorElement.children[0]
+  
+  image.src="images/autors/"+ autorElement.id +".jpg"
+  $(image).removeClass("imagen_autor_hide")
+  $(image).addClass("imagen_autor_show")
+  
+  i = frase.innerHTML
+  i = i + '<label class="autor_label"> - ' + autor.innerHTML + '</label>'
+  frase.innerHTML = i
   
   console.log("ok")
   score(SCORE_OK)
