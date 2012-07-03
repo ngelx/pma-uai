@@ -1,4 +1,3 @@
-
 // Atach events to HTMLElements
 $(document).ready(function(){  
   // Baricco,shirky, tovalds, piscitelli, levy
@@ -17,22 +16,22 @@ $(document).ready(function(){
   }
 })
 
-// global variable that copntains the id dragged
+// global variable that copntains the dragged element
 var dragData = null;
 
 function handleDragStart(e) {
-  // Target (this) element is the source node.
-  
+  // set the dragged element
   dragData = this;
   
+  // some efects for drag
   this.style.opacity = '0.4';
   e.dataTransfer.effectAllowed = 'move';
 }
  
 function handleDrop(e) {
-  // this/e.target is current target element.
+  // Stops some browsers from redirecting.
   if (e.stopPropagation) {
-    e.stopPropagation(); // Stops some browsers from redirecting.
+    e.stopPropagation();
   }
   
   // Check !!
@@ -41,7 +40,10 @@ function handleDrop(e) {
   return false;
 } 
 
+
 function checkResult(fraseElement, autorElement){
+  // the "brain" function. Here is where is the logic for checking results
+  
   if (autorElement.id === fraseElement.getAttribute('name')) {
     handleOk(fraseElement,autorElement)
   }
@@ -51,6 +53,14 @@ function checkResult(fraseElement, autorElement){
 }
 
 function handleOk(fraseElement, autorElement){
+  // TODO: hacer algo interesante ...
+  // TODO: chequear si fue marcada como okay ya ...
+  i = fraseElement.children[0].innerHTML
+  autor = autorElement.children[0].innerHTML
+  i = i + '<label class="autor_label"> - ' + autor + '</label>'
+  fraseElement.children[0].innerHTML = i
+  
+  console.log(i)
   console.log("ok")
 }
 
