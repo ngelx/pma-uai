@@ -15,6 +15,7 @@ $(document).ready(function(){
       frase.addEventListener('drop', handleDrop, false);
       frase.addEventListener('dragenter', handleDragEnter, false);
       frase.addEventListener('dragleave', handleDragLeave, false);
+      $(frase.children[0]).before("<img class='imagen_autor_hide'>");
     })
   }
 })
