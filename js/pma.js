@@ -12,6 +12,7 @@ $(document).ready(function(){
     // addevents to frases
     var frases = document.getElementsByName(autors[i]);
     [].forEach.call(frases, function(frase) {
+      $(frase).attr( "ondragover", "return false;" )
       frase.addEventListener('drop', handleDrop, false);
       frase.addEventListener('dragenter', handleDragEnter, false);
       frase.addEventListener('dragleave', handleDragLeave, false);
