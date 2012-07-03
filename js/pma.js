@@ -22,10 +22,10 @@ var dragData = null;
 
 function handleDragStart(e) {
   // Target (this) element is the source node.
-  this.style.opacity = '0.4';
-
+  
   dragData = this;
-
+  
+  this.style.opacity = '0.4';
   e.dataTransfer.effectAllowed = 'move';
 }
  
@@ -35,20 +35,25 @@ function handleDrop(e) {
     e.stopPropagation(); // Stops some browsers from redirecting.
   }
   
-  if (dragData.id === this.getAttribute('name')) {
-    handleOk(this,dragData)
-  }
-  else {
-    handleWrong(this,dragData)
-  }
+  // Check !!
+  checkResult(this,dragData)
   
   return false;
 } 
 
-function handleOk(fraseElment, autor){
+function checkResult(fraseElement, autorElement){
+  if (autorElement.id === fraseElement.getAttribute('name')) {
+    handleOk(fraseElement,autorElement)
+  }
+  else {
+    handleWrong(fraseElement,autorElement)
+  }
+}
+
+function handleOk(fraseElment, autorElement){
   console.log("ok")
 }
 
-function handleWrong(fraseElment, autor){
+function handleWrong(fraseElment, autorElement){
   console.log("mal")
 }
