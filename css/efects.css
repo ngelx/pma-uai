@@ -1,3 +1,11 @@
 .frase_enter {
-    background: red;
+  background: yellow;
 } 
+
+.frase_ok {
+  background: green;
+}
+
+.frase_wrong {
+  background: red;
+}

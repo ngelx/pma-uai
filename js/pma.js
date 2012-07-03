@@ -110,7 +110,13 @@ function handleOk(fraseElement, autorElement){
 }
 
 function handleWrong(fraseElement, autorElement){
+  if (fraseElement.className === "frase_ok") {
+    console.log("ya esta ok")
+    return
+  }
+  
   score(SCORE_WRONG)
+  fraseElement.className = "frase_wrong"
   console.log("mal")
 }
 
