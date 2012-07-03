@@ -12,6 +12,14 @@
     color: white;
 } 
 
+.frase_ok p {
+    color: black;
+} 
+
+.frase_wrong p {
+    color: black;
+} 
+
 .frase_ok {
   background: #5dff21;
   color:black;
@@ -19,9 +27,10 @@
 
 .frase_wrong {
   background: red;
+  color:black;
 }
 
-.imagen_autor_hide{
+.imagen_autor_hide {
   display:none;
 }
 

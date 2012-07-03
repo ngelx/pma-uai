@@ -302,3 +302,10 @@ h3 {
 	bottom:25%;
 	right:10%;
 }
+
+#ribbon {
+	position:absolute;
+	top:0;
+	right:0;
+	z-index:2;
+}
