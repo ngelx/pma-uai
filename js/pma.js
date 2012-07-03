@@ -21,6 +21,9 @@ $(document).ready(function(){
 // global variable that copntains the dragged element
 var dragData = null;
 
+var SCORE_OK = 10;
+var SCORE_WRONG = -15;
+
 function handleDragStart(e) {
   // set the dragged element
   dragData = this;
@@ -56,8 +59,9 @@ function handleDragEnter(e){
     console.log("ya esta ok")
     return
   }
-
+  $(this).addClass("frase_enter");
   console.log("drag_enter");
+
 }
 
 function handleDragLeave(e){
@@ -65,7 +69,7 @@ function handleDragLeave(e){
     console.log("ya esta ok")
     return
   }
-
+  $(this).removeClass("frase_enter")
   console.log("drag_leave");
 }
 
@@ -82,7 +86,6 @@ function checkResult(fraseElement, autorElement){
 }
 
 function handleOk(fraseElement, autorElement){
-  // TODO: hacer algo interesante ...
   if (fraseElement.className === "frase_ok") {
     console.log("ya esta ok")
     return
@@ -96,11 +99,11 @@ function handleOk(fraseElement, autorElement){
   
   console.log(i)
   console.log("ok")
-  score(10)
+  score(SCORE_OK)
 }
 
 function handleWrong(fraseElement, autorElement){
-  score(-15)
+  score(SCORE_WRONG)
   console.log("mal")
 }
 
