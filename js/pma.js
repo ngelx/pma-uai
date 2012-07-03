@@ -55,8 +55,8 @@ function checkResult(fraseElement, autorElement){
 function handleOk(fraseElement, autorElement){
   // TODO: hacer algo interesante ...
   // TODO: chequear si fue marcada como okay ya ...
-  if (fraseElement.className === "frase_okay") {
-    console.log("ya esta okay")
+  if (fraseElement.className === "frase_ok") {
+    console.log("ya esta ok")
     return
   }
   
