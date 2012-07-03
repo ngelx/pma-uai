@@ -50,10 +50,10 @@ function checkResult(fraseElement, autorElement){
   }
 }
 
-function handleOk(fraseElment, autorElement){
+function handleOk(fraseElement, autorElement){
   console.log("ok")
 }
 
-function handleWrong(fraseElment, autorElement){
+function handleWrong(fraseElement, autorElement){
   console.log("mal")
 }
