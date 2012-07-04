@@ -139,6 +139,7 @@ $(document).ready(function(){
     var autor = document.getElementById(autors[i]);
     autor.addEventListener('dragstart', handleDragStart, false);
     autor.addEventListener('dragend', handleDragEnd, false);
+    $(autor).attr( "draggable", "true" )
     
     // addevents to frases
     var frases = document.getElementsByName(autors[i]);
