@@ -131,6 +131,34 @@ function handleDragLeave(e){
 //
 
 $(document).ready(function(){  
+  //$('.scroll-panel').jScrollPane();
+$(function()
+{
+  
+    var settings = {
+        showArrows: true
+    };
+    var pane = $('.scroll-pane')
+    pane.jScrollPane(settings);
+    var api = pane.data('jsp');
+
+    $('.scroll-pane-arrows').jScrollPane(
+        {
+            showArrows: true,
+            horizontalGutter: 10
+        }
+    );
+    
+    setInterval(
+        function()
+        {
+            api.reinitialise();
+        },
+        1000
+    );
+});
+    
+        
   // Baricco,shirky, tovalds, piscitelli, levy
   var autors = ["autor_1","autor_2","autor_3","autor_4","autor_5","autor_6"]
 

@@ -176,7 +176,7 @@ article p {
 
 #central section {
 	float: left;
-	width: 72%;
+	/*width: 72%;*/
 	background: white;
 }
 

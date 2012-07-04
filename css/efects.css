@@ -41,3 +41,14 @@
   padding-top: 15px;
   padding-left: 7px;
 }
+
+.scroll-pane, .scroll-pane-arrows {
+    float: left;
+    width: 80%;
+    height: 380px;
+    overflow: auto;
+}
+
+.jspVerticalBar {
+    height: 380px;
+}
