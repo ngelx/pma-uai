@@ -17,13 +17,15 @@ body {
 	font-size: 100%;
 	margin: 0;
 	padding: 0;
-	background: rgb(155,210,64); /* Old browsers */
-	background: -webkit-radial-gradient(center, ellipse cover, rgba(155,210,64,1) 0%, rgba(100,149,37,1) 100%);
-	background: -moz-radial-gradient(center, ellipse cover, rgba(155,210,64,1) 0%, rgba(100,149,37,1) 100%);
-	background: -o-radial-gradient(center, ellipse cover, rgba(155,210,64,1) 0%, rgba(100,149,37,1) 100%);
-	background: -ms-radial-gradient(center, ellipse cover, rgba(155,210,64,1) 0%, rgba(100,149,37,1) 100%);
-	background: radial-gradient(center, ellipse cover, rgba(155,210,64,1) 0%, rgba(100,149,37,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9bd240', endColorstr='#649525',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: rgb(125,185,232); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(125,185,232,1) 0%, rgba(10,145,167,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(125,185,232,1)), color-stop(100%,rgba(10,145,167,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(125,185,232,1) 0%,rgba(10,145,167,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(125,185,232,1) 0%,rgba(10,145,167,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(125,185,232,1) 0%,rgba(10,145,167,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(125,185,232,1) 0%,rgba(10,145,167,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#0a91a7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 #redes {
@@ -104,12 +106,12 @@ nav ul li {
 }
 
 nav ul li:hover {
-	background: #8abe35;
+	background: #0a91a7;
 	color: white;
 }
 
 .active {
-	background: #8abe35;
+	background: #0a91a7;
 	color: white;
 }
 
@@ -220,7 +222,7 @@ section article p {
 #circle-back2 {
 	width: 50px;
 	height: 50px;
-	background: #7aad30;
+	background: #0a91a7;
 	position: relative;
 	border-radius: 50px;
 	left: 50%;
@@ -255,7 +257,7 @@ section article p {
 
 #circle-back2:hover {
 	background: #0b0b0b;
-	color: #7aad30;
+	color: #0a91a7;
 }
 
 /*Logo contact*/
