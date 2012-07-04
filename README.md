@@ -1,4 +1,4 @@
 pma-uai
 =======
 
-Pequeña aplicacion de ejemplo para PMA
+App realizada para trabajo final de Problemática del mundo actual, con el tema elegido denominado "OpenSource"
