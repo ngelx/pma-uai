@@ -8,6 +8,6 @@ window.onload=function()
                 
                 back.onclick=function()
                 {
-                    contacto.style.top="-28.5%"
+                    contacto.style.top="-100%"
                 };
             }

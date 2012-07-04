@@ -194,10 +194,10 @@ section article p {
 /*Contac*/
 #contacto {
 	width: 100%;
-	height: 25.45%;
+	height:92.5%;
 	background: white;
 	position: fixed;
-	top: -28.5%;
+	top: -100%;
 	left: 0;
 
 	-webkit-transition: top .5s;
@@ -205,7 +205,10 @@ section article p {
 	-o-transition: top .5s;
 	-ms-transition: top .5s;
 	transition: top .5s;
+	z-index:99999999999;
+	border-bottom:1px dotted black;
 }
+
 
 #circle-back {
 	width: 65px;
@@ -215,7 +218,7 @@ section article p {
 	border-radius: 50px;
 	left: 50%;
 	margin-left: -32px;
-	top: 75%;
+	top: 93%;
 	z-index: 999999;
 }
 
@@ -260,46 +263,36 @@ section article p {
 	color: #0a91a7;
 }
 
-/*Logo contact*/
-/* LOGO */
-#contacto #monsterlogo {
-	width: 222px;
-	height: 95px;
-	position: relative;
-	top: 50%;
-	margin-top: -47px;
-	left: 40px;
-}
-
-#monsterlogo a {
-	text-decoration: none;
-	color: black;
-}
-
-#monsterlogo img {
-	height: 80px;
-	float: left;
-}
-
-#monsterlogo h2 {
-	float: left;
-	margin-top: 60px;
-	margin-left: -10px;
-	font-family: 'Josefin Sans', serif;
-	font-size: 1.25em;
-	font-weight: normal;
-}
-
 #info {
-	height: 120px;
-	width: 500px;
-	float: right;
-	margin-top: -50px;
+	height: 100px;
+	width: 700px;
+	position:relative;
+	left:50%;
+	margin-left:-307px;
 }
 
-h3 {
-
+#info img {
+	float:left;
+	height:200px;
+	margin-left:30px;
 }
+
+#boxito {
+	width:600px;
+	height:300px;
+	background:red;
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left:-300px;
+	margin-top:-150px;
+	display:block;
+	opacity:0;
+	-webkit-transition:all 1s;
+}
+
+
+/* ------------------------------------------------------------------------ */
 
 #puntuacion {
 	position:absolute;
@@ -339,3 +332,4 @@ h3 {
 	right:0;
 	z-index:2;
 }
+
