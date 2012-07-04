@@ -1,43 +1,43 @@
-.frase_enter  {
-	-webkit-transition: all .5s;
-	-moz-transition: all .5s;
-	-o-transition: all .5s;
-	-ms-transition: all .5s;
-	transition: all .5s;
-	background: black;
-	color: white;
-} 
+.frase_enter {
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  -ms-transition: all .5s;
+  transition: all .5s;
+  background: black;
+  color: white;
+}
 
 .frase_enter p {
-    color: white;
-} 
+  color: white;
+}
 
 .frase_ok p {
-    color: black;
-} 
+  color: black;
+  padding:30px 0px 30px 0px;
+}
 
 .frase_wrong p {
-    color: black;
-} 
+  color: black;
+}
 
 .frase_ok {
   background: #5dff21;
-  color:black;
+  color: black;
 }
 
 .frase_wrong {
   background: red;
-  color:black;
+  color: black;
 }
 
 .imagen_autor_hide {
-  display:none;
+  display: none;
 }
-
 
 .imagen_autor_show {
   float: left;
   height: 60px;
-  padding-top: 11px;
+  padding-top: 15px;
   padding-left: 7px;
 }
