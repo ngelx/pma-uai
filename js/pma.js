@@ -132,7 +132,7 @@ function handleDragLeave(e){
 
 $(document).ready(function(){  
   // Baricco,shirky, tovalds, piscitelli, levy
-  var autors = ["autor_1","autor_2","autor_3","autor_4","autor_5"]
+  var autors = ["autor_1","autor_2","autor_3","autor_4","autor_5","autor_6"]
 
   for(i in autors){
     // addevents to autors
